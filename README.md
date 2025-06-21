@@ -92,7 +92,7 @@ We also visualized the parameter search space explored by Bayesian Optimization 
 - Python 3.11+
 - NumPy
 - Matplotlib
-- [Bayesian Optimization library](https://github.com/SheffieldML/GPyOpt)
+- [Bayesian Optimization library](https://github.com/bayesian-optimization/BayesianOptimization.git)
 
 ---
 
