@@ -45,13 +45,60 @@ We also visualized the parameter search space explored by Bayesian Optimization 
 
 ### Static Dataset
 
-![Static Q-R Scatter](images/static_qr_scatter.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="results/Q__R_dist_ATE_static.png" alt="Static Q-R Scatter" width="400"/>
+      <br><strong>Static Q-R Scatter</strong>
+    </td>
+    <td align="center">
+      <img src="results/Q__R_dist_num_land_static.png" alt="Static Map" width="400"/>
+      <br><strong>Static EKF Map</strong>
+    </td>
+  </tr>
+</table>
 
 ### Dynamic Dataset
 
-![Dynamic Q-R Scatter](images/dynamic_qr_scatter.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="results/Q__R_dist_num_land_static.png" alt="Dynamic Q-R Scatter" width="400"/>
+      <br><strong>Dynamic Q-R Scatter</strong>
+    </td>
+    <td align="center">
+      <img src="results/Q__R_dist_num_land_dyn.png" alt="Dynamic Map" width="400"/>
+      <br><strong>Dynamic EKF Map</strong>
+    </td>
+  </tr>
+</table>
+
 
 ---
 
 ## 📁 Project Structure
 
+.
+├── data/ # Victoria Park dataset
+├── ekf_slam_dynamic/ # Generated maps while optimization for static
+├── ekf_slam_static/ # Generated maps while optimization for dynamic
+├── src/ # EKF-SLAM implementation
+├── results/ # Output maps, logs, metrics
+└── README.md # Project description
+
+
+## 🛠 Dependencies
+
+- Python 3.11+
+- NumPy
+- Matplotlib
+- [Bayesian Optimization library](https://github.com/SheffieldML/GPyOpt)
+
+---
+
+## 📈 Evaluation Metric
+
+- **ATE RMSE** (Absolute Trajectory Error Root Mean Square Error) is used to evaluate the SLAM accuracy.
+- Landmark count indicates how many features were successfully tracked and updated.
+
+---
