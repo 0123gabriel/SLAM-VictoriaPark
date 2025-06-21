@@ -78,6 +78,7 @@ We also visualized the parameter search space explored by Bayesian Optimization 
 
 ## 📁 Project Structure
 
+```
 .
 ├── data/ # Victoria Park dataset
 ├── ekf_slam_dynamic/ # Generated maps while optimization for static
@@ -85,7 +86,7 @@ We also visualized the parameter search space explored by Bayesian Optimization 
 ├── src/ # EKF-SLAM implementation
 ├── results/ # Output maps, logs, metrics
 └── README.md # Project description
-
+```
 
 ## 🛠 Dependencies
 
